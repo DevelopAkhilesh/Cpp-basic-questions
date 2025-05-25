@@ -10,10 +10,13 @@ consonent = 0;
 
 
 for(int i=0;i<s.length();i++){
-    if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
+    char ch = s[i];
+    if(isalpha(ch)){
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
         vowel+=1;
     }else{
         consonent+=1;
+    }
     }
 }
 
